@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.saucedemo.tests.TestCases" time="13.056" tests="9" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\91966\eclipse-workspace\SauceDemoUI\target\test-classes;C:\Users\91966\eclipse-workspace\SauceDemoUI\target\classes;C:\Users\91966\.m2\repository\com\microsoft\playwright\playwright\1.41.0\playwright-1.41.0.jar;C:\Users\91966\.m2\repository\com\google\code\gson\gson\2.8.9\gson-2.8.9.jar;C:\Users\91966\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\91966\.m2\repository\com\microsoft\playwright\driver\1.41.0\driver-1.41.0.jar;C:\Users\91966\.m2\repository\com\microsoft\playwright\driver-bundle\1.41.0\driver-bundle-1.41.0.jar;C:\Users\91966\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\91966\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\91966\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\91966\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\91966\.m2\repository\org\apache\logging\log4j\log4j-api\2.22.1\log4j-api-2.22.1.jar;C:\Users\91966\.m2\repository\org\apache\logging\log4j\log4j-core\2.22.1\log4j-core-2.22.1.jar;C:\Users\91966\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\91966\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\91966\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\91966\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\91966\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Users\91966\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\91966\AppData\Local\Temp\surefire4834633995209059372\surefirebooter-20240219011011259_3.jar C:\Users\91966\AppData\Local\Temp\surefire4834633995209059372 2024-02-19T01-10-11_118-jvmRun1 surefire-20240219011011259_1tmp surefire_0-20240219011011259_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\91966\eclipse-workspace\SauceDemoUI\target\test-classes;C:\Users\91966\eclipse-workspace\SauceDemoUI\target\classes;C:\Users\91966\.m2\repository\com\microsoft\playwright\playwright\1.41.0\playwright-1.41.0.jar;C:\Users\91966\.m2\repository\com\google\code\gson\gson\2.8.9\gson-2.8.9.jar;C:\Users\91966\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\91966\.m2\repository\com\microsoft\playwright\driver\1.41.0\driver-1.41.0.jar;C:\Users\91966\.m2\repository\com\microsoft\playwright\driver-bundle\1.41.0\driver-bundle-1.41.0.jar;C:\Users\91966\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\91966\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\91966\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\91966\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\91966\.m2\repository\org\apache\logging\log4j\log4j-api\2.22.1\log4j-api-2.22.1.jar;C:\Users\91966\.m2\repository\org\apache\logging\log4j\log4j-core\2.22.1\log4j-core-2.22.1.jar;C:\Users\91966\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\91966\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\91966\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\91966\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\91966\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\91966"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="C:\Users\91966\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="C:\Users\91966\eclipse-workspace\SauceDemoUI"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\91966\AppData\Local\Temp\surefire4834633995209059372\surefirebooter-20240219011011259_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.9+9"/>
+    <property name="user.name" value="91966"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.9+9"/>
+    <property name="localRepository" value="C:\Users\91966\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\91966\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.9"/>
+    <property name="user.dir" value="C:\Users\91966\eclipse-workspace\SauceDemoUI"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\91966\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/91966/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858/jre/bin/server;C:/Users/91966/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-21\bin;C:\apache-maven-3.9.6-bin\apache-maven-3.9.6\bin;C:\apache-maven-3.9.6\bin;C:\Users\91966\AppData\Local\Microsoft\WindowsApps;C:\Users\91966\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\91966\AppData\Roaming\npm;C:\WINDOWS\system32;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.9+9"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="loginPageTitleTest" classname="com.saucedemo.tests.TestCases" time="0.013">
+    <system-out><![CDATA[Browser name is :chrome
+Login page Title is : Swag Labs
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="loginPageUrlTest" classname="com.saucedemo.tests.TestCases" time="0.003">
+    <system-out><![CDATA[Before loing page URL is : https://www.saucedemo.com/
+]]></system-out>
+  </testcase>
+  <testcase name="homePageUrlTest" classname="com.saucedemo.tests.TestCases" time="0.183">
+    <system-out><![CDATA[Home page Title is : https://www.saucedemo.com/inventory.html
+]]></system-out>
+  </testcase>
+  <testcase name="addLeastExpensiveProductTest" classname="com.saucedemo.tests.TestCases" time="0.102">
+    <system-out><![CDATA[$29.99
+$9.99
+$15.99
+$49.99
+$7.99
+$15.99
+29.99
+9.99
+15.99
+49.99
+7.99
+15.99
+Min price is:7.99
+Index of minimum price: 4
+The least expensive product name is Sauce Labs Onesie
+]]></system-out>
+  </testcase>
+  <testcase name="addMostExpensiveProductTest" classname="com.saucedemo.tests.TestCases" time="0.054">
+    <system-out><![CDATA[$29.99
+$9.99
+$15.99
+$49.99
+$7.99
+$15.99
+29.99
+9.99
+15.99
+49.99
+7.99
+15.99
+Max price is:49.99
+Index of maximum price: 3
+The most expensive product name is Sauce Labs Fleece Jacket
+]]></system-out>
+  </testcase>
+  <testcase name="productNameTest" classname="com.saucedemo.tests.TestCases" time="0.073"/>
+  <testcase name="checkoutTest" classname="com.saucedemo.tests.TestCases" time="0.101">
+    <system-out><![CDATA[Checkout page Title is : https://www.saucedemo.com/checkout-step-one.html
+]]></system-out>
+  </testcase>
+  <testcase name="priceAndTaxVerifier" classname="com.saucedemo.tests.TestCases" time="0.077">
+    <system-out><![CDATA[Combined total price and tax rate equate to 8%
+]]></system-out>
+  </testcase>
+  <testcase name="completeCheckoutTest" classname="com.saucedemo.tests.TestCases" time="0.05"/>
+</testsuite>

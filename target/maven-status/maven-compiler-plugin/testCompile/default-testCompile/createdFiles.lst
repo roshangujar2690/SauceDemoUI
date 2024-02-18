@@ -1,0 +1,3 @@
+com\saucedemo\base\BaseClass.class
+com\saucedemo\tests\TestCases.class
+com\saucedemo\utilities\ExtentReportManager.class

@@ -1,0 +1,7 @@
+com\saucedemo\pages\LoginPage.class
+com\saucedemo\pages\CheckoutOverview.class
+com\saucedemo\pages\CheckoutComplete.class
+com\saucedemo\pages\CheckoutInfo.class
+com\saucedemo\pages\HomePage.class
+com\saucedemo\pages\CartPage.class
+com\saucedemo\factory\PlaywrightFactory.class

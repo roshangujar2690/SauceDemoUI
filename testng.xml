@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SauceDemo PW Suite" verbose="4">
+	<listeners>
+		<listener class-name="com.saucedemo.utilities.ExtentReportManager"></listener>
+	</listeners>
+	<test name="SauceDemo Cart Test Cases">
+		<classes>
+			<class name="com.saucedemo.tests.TestCases" />
+		</classes>
+	</test>
+
+</suite>
