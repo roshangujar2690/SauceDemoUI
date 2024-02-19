@@ -17,7 +17,6 @@ public class TestCases extends BaseClass{
 	{
 		String actualTitle = loginPage.getLoginPageTitle();
 		Assert.assertEquals(actualTitle, "Swag Labs");
-		logger.info("************************Compared Login page titles*********************************");
 	}
 	
 	@Test(priority=2)
@@ -25,7 +24,6 @@ public class TestCases extends BaseClass{
 	{
 		String actualUrl = loginPage.getLoginPageUrl();
 		Assert.assertEquals(actualUrl, prop.getProperty("loginUrl").trim());
-		logger.info("************************Compared Login page urls*********************************");
 	}
 	
 	@Test(priority=3)
@@ -34,8 +32,6 @@ public class TestCases extends BaseClass{
 		homePage=loginPage.login(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 		String actualUrl=homePage.getHomePageUrl();
 		Assert.assertEquals(actualUrl, prop.getProperty("homeUrl").trim());
-		
-		logger.info("************************Compared Home page titles*********************************");
 	}
 	
 	@Test(priority=4, dependsOnMethods="loginPageUrlTest")
@@ -52,9 +48,7 @@ public class TestCases extends BaseClass{
         System.out.println("Min price is:" + min);
         System.out.println("Index of minimum price: " + index_minPrice);
         
-        homePage.addToCart(index_minPrice);
-        
-        logger.info("************************Added the least expensive item to the cart*********************************");
+        homePage.addToCart(index_minPrice); 
         
         int badgeCount=homePage.getCartBadgeValue();
         Assert.assertEquals(badgeCount, 1);
@@ -81,8 +75,6 @@ public class TestCases extends BaseClass{
         
         homePage.addToCart(index_maxPrice);
         
-        logger.info("************************Added the most expensive item to the cart*********************************");
-        
         int badgeCount=homePage.getCartBadgeValue();
         Assert.assertEquals(badgeCount, 2);
         
@@ -102,7 +94,6 @@ public class TestCases extends BaseClass{
 		String mostExpensiveProductName=cartPage.geSecondProductName();
 		Assert.assertEquals(mostExpensiveProductName, "Sauce Labs Fleece Jacket");
 		
-		logger.info("************************Compared the product names added to the cart*********************************");
 	}
 	
 	@Test(priority=7)
@@ -115,7 +106,6 @@ public class TestCases extends BaseClass{
 		String actualUrl = checkoutInfo.getCheckoutPageUrl();
 		Assert.assertEquals(actualUrl, prop.getProperty("checkoutUrl"));
 		
-		logger.info("************************Compared checkout page urls*********************************");
 	}
 	
 	@Test(priority=8)
@@ -136,14 +126,12 @@ public class TestCases extends BaseClass{
 			System.out.println("Combined total price and tax rate equate to 8%");
 			Assert.assertTrue(true);
 			
-			logger.info("************************Tax paid equate to 8% of the combined total price*********************************");
 		}
         else
         {
         	System.out.println("Combined total price and tax rate do not equate to 8%");
         	Assert.assertTrue(false);
         	
-        	logger.info("************************Tax paid does not equate to 8% of the combined total price*********************************");
         }	
 		
 	}
@@ -154,7 +142,6 @@ public class TestCases extends BaseClass{
 		String actualTitle = checkoutComplete.getPageTitle();
 		Assert.assertEquals(actualTitle, "Checkout: Complete!");
 		
-		logger.info("************************Compared checkoutComplete page titles*********************************");
 	}
 	
 	//converting string list into float list

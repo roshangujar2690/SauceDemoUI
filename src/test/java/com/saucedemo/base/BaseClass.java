@@ -3,8 +3,6 @@ package com.saucedemo.base;
 import java.io.IOException;
 import java.util.Properties;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -28,21 +26,14 @@ public class BaseClass {
 	protected CheckoutOverview checkoutOverview;
 	protected CheckoutComplete checkoutComplete;
 	
-	public Logger logger;
 	
 	@BeforeTest(alwaysRun=true)
 	public void setup() throws IOException
 	{
-		logger=LogManager.getLogger(this.getClass());
 		pf = new PlaywrightFactory();
 		prop=pf.init_prop();
 		pg = pf.initBrowser(prop);
 		loginPage=new LoginPage(pg);
-		
-		
-		logger.info("************************Setup completed*********************************");
-		
-		
 	}
 	
 	@AfterTest(alwaysRun=true)
@@ -50,6 +41,5 @@ public class BaseClass {
 	{
 //		pg.pause();
 		pg.context().browser().close();
-		logger.info("************************Browser closed*********************************");
 	}
 }
